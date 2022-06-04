@@ -46,7 +46,7 @@ Here's a brief intro about what a contributor must do in order to start developi
 1. Open terminal
 
 ```
-git clone 
+git clone <link to your forked repo>
 ```
 
 2. Go to folder according to the issue you are working and save your work
