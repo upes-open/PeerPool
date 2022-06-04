@@ -34,7 +34,7 @@ and publish rides for people to book.
     └── truffle-config.js    ->    Port Configuration for Truffle.     
 
 
-### Fork the repository to get started
+### Star & Fork the repository to get started
 
 
 ## Workflow
