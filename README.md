@@ -36,9 +36,9 @@ and publish rides for people to book.
 
 ### Fork the repository to get started
 
-
+<!-- 
 ## Workflow
-  ![dappworkflow](https://drive.google.com/file/d/1sWAaoCIB6TuhwxWKOB8P2CsqALUpSba5/view?usp=sharing)
+  ![dappworkflow](https://drive.google.com/file/d/1sWAaoCIB6TuhwxWKOB8P2CsqALUpSba5/view?usp=sharing) -->
 
 ## Set-Up
 Here's a brief intro about what a contributor must do in order to start developing the project further:
