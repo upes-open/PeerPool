@@ -49,19 +49,19 @@ Here's a brief intro about what a contributor must do in order to start developi
 git clone 
 ```
 
-3. Go to folder according to the issue you are working and save your work
+2. Go to folder according to the issue you are working and save your work
 
 ```
 git add .
 ```
 
-4. Now commit your changes
+3. Now commit your changes
 
 ```
 git commit -m "your message"
 ```
 
-5. Raise your first PR 
+4. Raise your first PR 
 
 
 
