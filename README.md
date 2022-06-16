@@ -13,7 +13,7 @@ and publish rides for people to book.
 
 ### For Further Communications Join Our Discord Server: https://discord.gg/QHQ96vMF
 
-
+<hr>
 
 ## Project Structure
 
