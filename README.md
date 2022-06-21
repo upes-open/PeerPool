@@ -1,13 +1,6 @@
 # P2P-Carpooling-DAPP
 
-
-An alternative to apps like Ola, Uber, who control the working environment
-for drivers and take a cut from their earnings which makes life
-difficult for a normal driver. This P2P Carpooling DAPP will connect
-drivers directly with customers to share a ride. The transactions
-will go through on blockchain with the help of smart contracts and
-will be paid for via cryptocurrency. Anyone can register as a driver
-and publish rides for people to book.
+An alternative cab booking app to apps like Ola, and Uber, which control the working environment for drivers and take a cut from their earnings as commission making life difficult for a regular driver. This P2P Carpooling DAPP will connect drivers directly with customers to share a ride. The transactions will go through on blockchain with the help of smart contracts paid via cryptocurrency. Anyone can register as a driver and publish rides for people to book. Not only does this make the process more hassle-free, but makes it more transparent.
 
 <hr>
 
@@ -47,26 +40,22 @@ and publish rides for people to book.
 ## Set-Up
 Here's a brief intro about what a contributor must do in order to start developing the project further:
 
-1. Open terminal
+1. Open VSCode 
 
+2. Copy the given command
+```shell
+git clone https://github.com/upes-open/OSC-Crime-Analysis-and-Prediction
 ```
-git clone <link to your forked repo>
-```
-
-2. Go to folder according to the issue you are working and save your work
-
-```
+3. Go to the folder according to the issue you are working on and save your work.
+```shell
 git add .
 ```
-
-3. Now commit your changes
-
-```
+4. Now commit your changes with a message about it
+```shell
 git commit -m "your message"
 ```
+5. Push your changes
 
-4. Raise your first PR 
-
-
+6. Raise your first PR :partying_face:
 
 **_NOTE:_** Metamask and other wallets keep on changing the protocols to work with the blockchain to ensure safety. "Deprecated" error might appear in future. Check official Metamask documentation for updates.
