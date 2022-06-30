@@ -44,7 +44,7 @@ Here's a brief intro about what a contributor must do in order to start developi
 
 2. Copy the given command
 ```shell
-git clone https://github.com/upes-open/OSC-Crime-Analysis-and-Prediction
+git clone https://github.com/upes-open/OSC-P2P-Carpooling-DAPP.git
 ```
 3. Go to the folder according to the issue you are working on and save your work.
 ```shell
@@ -56,6 +56,6 @@ git commit -m "your message"
 ```
 5. Push your changes
 
-6. Raise your first PR :partying_face:
+6. Raise your first PR
 
 **_NOTE:_** Metamask and other wallets keep on changing the protocols to work with the blockchain to ensure safety. "Deprecated" error might appear in future. Check official Metamask documentation for updates.
