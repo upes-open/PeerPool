@@ -2,11 +2,7 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 contract carpooling {
-    struct human {
-        string name;
-        uint8 age;
-        string gender;
-    }
+
     struct ride {
         string origin;
         string destination;
