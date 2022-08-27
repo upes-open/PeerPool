@@ -1,0 +1,45 @@
+body {
+    background-color: rgba(15, 23, 42, 1);
+    /* background-color: red; /* For browsers that do not support gradients
+    background-image: linear-gradient(to left, #16020a, #2a2727ad); */
+  }
+
+ .alignC{
+    text-align: center;
+ }  /* To align Items in Center */
+
+ .head{
+    margin-top: 5%;
+    font-size: large;
+    color: #909be2;
+ }
+
+ .mainhead{
+    margin-top: 2%;
+    font-size: 34px;
+    color: #38bdf8;
+    text-shadow:1px 1px  #ffffff;
+ }
+
+ .boxT{
+    color: #38bdf8;
+    margin-top: 3%;
+    border-radius: 12px;
+ }
+
+ .button {
+    margin: 2%;
+    background-color: #17759e; /* Green */
+    border: none;
+    border-radius: 27px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }

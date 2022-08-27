@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <link rel="stylesheet" type="text/css" href="frontui.css"> -->
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="dropdown.css">
+
+        <script src="dropdown.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>P2P-CARPOOLING-DAPP</title>
+    </head>
+    <body>
+        <section class="alignC">
+
+            <div class="mainhead">
+                <h1><strong>P2P CARPOOLING</strong></h1>
+            </div>
+
+        <div class="head">
+            <a class="hover:text-blue-500 px-6" href="home.html"><b>Home</b></a>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><b>Driver</b></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a class="hover:text-blue-500" href="#">Available Drivers</a>
+                  <a class="hover:text-blue-500" href="#">Confirm this driver</a>
+                </div>
+              </div>
+          </div>
+
+        <div class="boxT">
+            <form>
+            <label for="pickup"><b>Pick-up location</b></label><br>
+            <input type="text" id="pickup" name="pickup"><br>
+            <label for="drop"><b>Drop location</b></label><br>
+            <input type="text" id="drop" name="drop"><br>
+            <label for="time"><b>Time</b></label><br>
+            <input type="time" id="time" name="time"><br>
+            <label for="required"><b>Required Seats</b></label><br>
+            <input type="number" id="required" name="required"><br>
+            </form>
+            <button class="button">Book</button>
+        </div>
+
+    </section>
+    </body>
+</html> 
