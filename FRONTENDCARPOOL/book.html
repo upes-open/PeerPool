@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title></title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+    <nav>
+		<img src="public/image-9@2x.png" class="logo">
+        <h1><span style="color: #FFA500;"> P2P CARPOOLING</span></h1>
+		<ul class="nav_right">
+            <input type="submit" Value="Link your wallet" onclick="Wallet()" class="button">
+			<a href="home.html" class="nav_item"> <li class="nav_item">HOME</li></a>
+            <a href="#" class="nav_item"> <li class="nav_item">ABOUT</li></a>
+			<a href="#" class="nav_item"> <li class="nav_item">DRIVER REGISTERATION</li></a>
+			
+        </ul>
+    </nav>
+    <br>
+    <div class="head">
+		<div class="grid_container">
+			
+		<div class="grid_item item1">
+			<form>
+                <label for="drop"><b>Drop Location</b></label>
+                <input type="text" id="drop" name="drop"><br>
+                <br>
+                <label for="pick up"><b>Pick-up Location</b></label>
+                <input type="text" id="Pick-up" name="pickup"><br>
+                <br>
+                <label for="time"><b>Pick up time</b></label>
+                <input type="time" id="entry time" name="entry time"><br>
+                <br>
+            </form>
+            <input type="submit" Value="BOOK RIDE" class="button">
+		</div>
+		</div>
+	</div>
+</body>
+<script>
+    function Wallet(){
+        window.location.href="wallet.html"
+    }
+    function book(){
+        window.location.href="book.html"
+    }
+</script>

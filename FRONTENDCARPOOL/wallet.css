@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Oswald:wght@200&family=Pompiere&family=Poppins&family=Rambla:wght@700&display=swap');
+html, body{
+	margin: 0;
+	font-family: Pompiere;
+	font-size: 16px;
+}
