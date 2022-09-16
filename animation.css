@@ -1,0 +1,44 @@
+body
+{
+    background-image: linear-gradient(rgb(32, 99, 8),black, black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.typewriter h1 {
+    color: ivory;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s steps(10) infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.box
+{
+    border-radius: 30px;
+    background: rgb(9, 185, 9);
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    bottom: 10%;
+    left: 45%;
+    text-align: center;
+    
+
+}
