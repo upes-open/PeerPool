@@ -29,8 +29,7 @@
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
+     <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex justify-content-between">
 
@@ -41,40 +40,43 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="Driver.html">Driver Registeration</a></li>
-          <li><a class="nav-link scrollto " href="#help">Help</a></li>
+          <li><a class="nav-link scrollto" href="form.html">Registeration</a></li>
+          <li><a class="nav-link scrollto " href="help.html">Help</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
-  <!-- ======= Contact Section ======= -->
-  <section id="contact">
-    <div class="container">
-      <div class="form">
-        <form method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="form-group col-md-6">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
-            </div>
-            <div class="form-group col-md-6 mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Age" required>
-            </div>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
           </div>
-          <br><br>
-          <div class="row">
-            <div class="form-group col-md-6">
-              <input type="text" name="name" class="form-control" id="name" placeholder="State" required>
-            </div>
-            <div class="form-group col-md-6 mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Country" required>
-            </div>
           </div>
-        <br><br>
-          <div class="text-center"><button type="submit">Register</button></div>
-        </form>
-      </div>
+        </div>
 
-    </div>
-  </section><!-- End Contact Section -->
+  
+        <div class="container">
+          <div class="form">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Specify your issue" required></textarea>
+              </div>
+              <br>
+              <div class="text-center"><button type="submit">Submit</button></div>
+            </form>
+          </div>
+        </div>
+      </section><!-- End Contact Section -->
