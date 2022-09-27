@@ -4,6 +4,9 @@
   "repository": "https://github.com/upes-open/OSC-P2P-Carpooling-DAPP.git",
   "author": "Pawan <pawanbajaj2012@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "lite-server"
+  },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
     "@ethersproject/providers": "^5.4.7",
@@ -18,6 +21,7 @@
     "ethers": "^5.4.7",
     "hardhat": "^2.11.2",
     "hardhat-gas-reporter": "^1.0.8",
+    "lite-server": "^2.6.1",
     "solidity-coverage": "^0.8.0",
     "typechain": "^8.1.0"
   }
