@@ -17,6 +17,8 @@ contract carpooling {
     }
 
     mapping (uint => address) public rideowner;
+    mapping (uint => mapping(uint => address)) public rideToRider;
+
     uint8 ridecount = 0;
     ride[] public rides;
     // ride[] public searchRides;
@@ -42,8 +44,8 @@ contract carpooling {
     }
 
     function bookRide(uint rideId) public {
+        rideToRider[rideId][rides[rideId].seats] = msg.sender;
         rides[rideId].seats -= 1;
-
     }
 
 }
