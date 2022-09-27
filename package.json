@@ -1,7 +1,6 @@
 {
   "name": "osc-p2p-carpooling-dapp",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/upes-open/OSC-P2P-Carpooling-DAPP.git",
   "author": "Pawan <pawanbajaj2012@gmail.com>",
   "license": "MIT",
