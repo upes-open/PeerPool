@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="Content-Security-Policy" script-src='unsafe-inline';>
+
 
   <title>Carpooling DAPP</title>
   <meta content="" name="description">
@@ -29,6 +31,19 @@
 </head>
 
 <body>
+
+  <script>
+    async function connect() {
+      if(typeof window.ethereum !== "undefined"){
+        await window.ethereum.request({method: "eth_requestAccounts"})
+        console.log("connected to metamask")
+      }
+      else
+      {
+        console.log("no metamask")
+      }
+    }
+  </script>
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
@@ -86,7 +101,7 @@
             <p class="cta-text"> Link your wallet now to book or publish rides!</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">LINK YOUR WALLET</a>
+            <button class="cta-btn align-middle" id = "connect to metamask" onClick="connect()">LINK YOUR WALLET</a>
           </div>
         </div>
       </div>
@@ -108,7 +123,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="./app.js"></script>
+  <script src="../scripts/deploy.js"></script>
 </body>
 
 </html>
