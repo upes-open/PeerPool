@@ -7,8 +7,8 @@ async function main() {
   await carpooling.deployed()
   console.log(`Deployed contract to: ${carpooling.address}`)
   if(network.config.chainId == 5 && process.env.ETHERSCAN_API_KEY) {
-    await simpleStorage.deployTransaction.wait(6)
-    await verify(simpleStorage.address, [])
+    await carpooling.deployTransaction.wait(6)
+    await verify(carpooling.address, [])
   }
 
 }
