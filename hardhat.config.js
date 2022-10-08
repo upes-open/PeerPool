@@ -10,7 +10,7 @@ require("@nomiclabs/hardhat-waffle");
 const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL
 const PRIVATE_KEY = process.env.PRIVATE_KEY
 const POLYGON_MUMBAI_RPC_URL = process.env.POLYGON_MUMBAI_RPC_URL
-
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
 module.exports = {
   solidity: "0.8.17",
   defaultNetwork: "hardhat",
@@ -31,6 +31,9 @@ module.exports = {
       url: "http://127.0.0.1:8545/",
       chainId: 31337,
     }
+  },
+  etherscan: {
+    apiKey: ETHERSCAN_API_KEY,
   },
     // namedAccounts: {
     //     deployer: {
