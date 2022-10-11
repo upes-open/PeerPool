@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="Content-Security-Policy" script-src='unsafe-inline';>
+
+
+  <title>Carpooling DAPP</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!--link href="assets/img/favicon.png" rel="icon"-->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div id="logo">
+        <h1><a href="index.html">OPEN<span>Carpooling</span></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="form.html">Registeration</a></li>
+          <li><a class="nav-link scrollto " href="help.html">Help</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Contact Section ======= -->
+  <section id="contact">
+    <div class="container">
+      <div class="form">
+        <form method="post" role="form" class="php-email-form" onsubmit="publishride()">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <input type="text" name="name" class="form-control" id="origin" placeholder="Origin" required>
+            </div>
+            <div class="form-group col-md-6 mt-3 mt-md-0">
+              <input type="text" class="form-control" name="email" id="destination" placeholder="Destination" required>
+            </div>
+          </div>
+          <br>
+          <div class="row"></div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" name="subject" id="dtime" placeholder="Departure Time (24 hour format)" required>
+          </div>
+          <div class="form-group col-md-6 mt-3 mt-md-0">
+            <input type="text" class="form-control" name="email" id="seats" placeholder="Seats Available" required>
+          </div>
+          <div class="form-group col-md-6 mt-3 mt-md-0">
+            <input type="text" class="form-control" name="email" id="price" placeholder="Price (INR)" required>
+          </div>
+        </div>
+          <br>
+          <div class="text-center"><button id="publish_ride" type="submit">Publish ride</button></div>
+        </form>
+      </div>
+    </div>
+  </section><!-- End Contact Section -->
+  <script src="./app.js"></script>
+  <script src="../scripts/deploy.js"></script>
+
+</body>
+</html>
