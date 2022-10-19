@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+// the contract needs to be updated with events for transaction data
+
 contract carpooling {
     // struct human {
     //     string name;
