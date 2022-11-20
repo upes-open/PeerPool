@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    
+   
     <link rel="stylesheet" href="book.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -14,47 +14,28 @@
       <form action="#">
         <div class="user-details">
           <div class="input-box">
-            <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Pick Up</span>
-            <input type="text" placeholder="Enter your Pick Up Point" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <span class="details">Origin</span>
+            <input type="text" placeholder="Enter your Origin" required>
           </div>
           <div class="input-box">
             <span class="details">Destination</span>
             <input type="text" placeholder="Enter your Destination" required>
           </div>
           <div class="input-box">
-            <span class="details">Number</span>
-            <input type="text" placeholder="Enter your Number" required>
+            <span class="details">Departure Time</span>
+            <input type="time" placeholder="Enter your email" required>
           </div>
           <div class="input-box">
-            <span class="details">Date</span>
-            <input type="date" placeholder="Confirm your password" required>
+            <span class="details">Seats Available</span>
+            <input type="number" placeholder="Choose Seats Available" required>
           </div>
-        </div>
-        <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
+          <div class="input-box">
+            <span class="details">Fair</span>
+            <input type="number" min="0" step="any"  placeholder="Enter your Number" required>
+          </div>
           
-          </div>
         </div>
+        
         <div class="button">
           <input type="submit" value="Register">
         </div>
