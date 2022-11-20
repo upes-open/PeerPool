@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="book.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your Name " required>
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="number" placeholder="Enter your Age" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="tel" placeholder="Enter your Number" required pattern="[6789][0-9]{9}">
+          </div>
+          <div class="input-box">
+            <!-- <option value=""> Select</option> -->
+            <span class="details">Gender</span>
+            <!-- <input type="text" placeholder="Choose Seats Available" required>
+          </div> -->
+          <select name="gender" id="input-box" style="height: 43px; width: 200px">
+            <option value="" style="color: #676464;">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+          </div>
+        
+          
+          
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
