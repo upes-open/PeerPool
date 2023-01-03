@@ -18,7 +18,7 @@ contract carpooling {
 
     mapping (uint => address) public rideowner;
     mapping (uint => mapping(uint => address)) public rideToRider;
-    uint8 ridecount = 0;
+    uint8 public ridecount = 0;
     ride[] public rides;
     human[] public person;
     mapping (address => human) public addressDetails;
