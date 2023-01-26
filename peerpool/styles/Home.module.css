@@ -1,0 +1,91 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  background-image: linear-gradient(to right,#007991,#78ffd6);
+}
+
+.footer {
+  display: flex;
+  padding: 2rem 0;
+  margin-right: 100%;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  position: fixed;
+  top: 5%;
+  color: #033641;
+  /* font-weight: bold; */
+  right: 4%;
+  font-family: 'Montserrat', sans-serif;
+  /* border-top: 1px solid #eaeaea; */
+  
+  /* margin-top:-70%; */
+}
+
+.image {
+  width: 70%;
+  height: 50%;
+  margin-left: 20%;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.description {
+  line-height: 1;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.socials{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+}
+.button {
+  border-radius: 4px;
+  background-color: gray;
+  
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 2%;
+  margin-right: 20px;
+}
+.logo{
+    padding: 10px;
+    width: 110%;
+    cursor: pointer;
+}
+
+.openlogo {
+  position: fixed;
+  top: 3%;
+  left: 3%;
+  width: 6%;
+}
+@media (max-width: 1000px) {
+  .main {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
