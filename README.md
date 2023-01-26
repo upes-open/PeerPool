@@ -44,16 +44,28 @@ npm install --global yarn
 yarn install
 ```
 
-3. Compile Contracts:
+## To Run on Localhost:
+1. 
+```
+cd peerpool
+```
+2. 
+```
+yarn run dev
+```
+
+### Other Commands
+
+1. Compile Contracts:
 ```
 yarn hardhat compile
 ```
 
-4. Interact with JS:
+2. Run Scripts:
 ```
 yarn hardhat run <script name>
 ```
-5. Run tests:
+3. Run tests:
 ```
 yarn hardhat test
 ```
@@ -91,7 +103,11 @@ git commit -m "your message"
 
 <hr>
 
-### For Further Communications Join Our Discord Server: https://discord.gg/QHQ96vMF
+### For Further Communications 
+* Join Our Discord Server: https://discord.gg/QHQ96vMF 
+* Email: 500096625@stu.upes.ac.in
+* Ping on discord: trev#4443
+
 
 
 <hr>
