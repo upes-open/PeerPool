@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from 'next/link';
+import Image from 'next/image'
 
 import styles from "../styles/Home.module.css";
 import Web3Modal from "web3modal";
@@ -90,7 +91,7 @@ const connectWallet = async () => {
       </Head>
       <div className={styles.main}>
       <a href="https://upes-open.org/" target="_blank" rel="noreferrer">
-      <img src="/open logo.png" className={styles.openlogo}></img>
+      <Image src="/open logo.png" className={styles.openlogo}></Image>
       </a>
         
       <header className={styles.header}>Address: {address}</header>
@@ -107,14 +108,14 @@ const connectWallet = async () => {
         </div>
         <div className={styles.socials}>
         <a href="https://github.com/upes-open" target="_blank" rel="noreferrer">
-          <img src="/github.png" alt="spotify" className={styles.logo}></img>
+          <Image src="/github.png" alt="spotify" className={styles.logo}></Image>
       </a>
       
       <a href="https://www.instagram.com/upesopen_/" target="_blank" rel="noreferrer">
-        <img src="/instagram.png" alt="instagram" className={styles.logo}></img>
+        <Image src="/instagram.png" alt="instagram" className={styles.logo}></Image>
     </a>
     <a href="https://www.linkedin.com/company/open-community/mycompany/" target="_blank" rel="noreferrer">
-          <img src="/linkedin.png" alt="linkedin" className={styles.logo}></img>
+          <Image src="/linkedin.png" alt="linkedin" className={styles.logo}></Image>
       </a>
 
       </div>
