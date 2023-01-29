@@ -89,7 +89,7 @@ const connectWallet = async () => {
         <link rel="icon" href="/open logo.png" />
       </Head>
       <div className={styles.main}>
-      <a href="https://upes-open.org/" target="_blank">
+      <a href="https://upes-open.org/" target="_blank" rel="noreferrer">
       <img src="/open logo.png" className={styles.openlogo}></img>
       </a>
         
@@ -106,14 +106,14 @@ const connectWallet = async () => {
         <div>
         </div>
         <div className={styles.socials}>
-        <a href="https://github.com/upes-open" target="_blank">
+        <a href="https://github.com/upes-open" target="_blank" rel="noreferrer">
           <img src="/github.png" alt="spotify" className={styles.logo}></img>
       </a>
       
-      <a href="https://www.instagram.com/upesopen_/" target="_blank">
+      <a href="https://www.instagram.com/upesopen_/" target="_blank" rel="noreferrer">
         <img src="/instagram.png" alt="instagram" className={styles.logo}></img>
     </a>
-    <a href="https://www.linkedin.com/company/open-community/mycompany/" target="_blank">
+    <a href="https://www.linkedin.com/company/open-community/mycompany/" target="_blank" rel="noreferrer">
           <img src="/linkedin.png" alt="linkedin" className={styles.logo}></img>
       </a>
 
