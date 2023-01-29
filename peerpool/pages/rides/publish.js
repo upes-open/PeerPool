@@ -8,7 +8,7 @@ import styles from "../../styles/Home.module.css";
 
 
 
-export default function publish() {
+export default function Publish() {
 
     const [origin, setOrigin] = useState("");
     const [destination, setDestination] = useState("");

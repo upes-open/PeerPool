@@ -5,7 +5,7 @@ import { newRide, getProviderorSigner, connectWallet } from '../../utils/functio
 import Web3Modal from "web3modal";
 import { BigNumber, providers, Contract, ethers } from "ethers";
 import styles from "../../styles/Home.module.css";
-export default function book() {
+export default function Book() {
     const [origin, setOrigin] = useState("");
     const [destination, setDestination] = useState("");
     const [departureTime, setDepartureTime] = useState();
