@@ -20,9 +20,10 @@ export const checkUser = async () => {
   export const newRide = async (signer, contract, origin, destination, departureTime, fare, seats) => {
     try {
       const tx = await contract.createride(origin, destination, departureTime, fare, seats);
-      setLoading(true);
+      // setLoading(true);
       await tx.wait();
-      setLoading(false);
+      console.log(tx);
+      // setLoading(false);
     }
     catch (err) {
       console.error(err);

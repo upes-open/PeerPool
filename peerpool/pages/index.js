@@ -6,6 +6,7 @@ import Web3Modal from "web3modal";
 import {providers, Contract} from "ethers";
 import { useEffect,useRef, useState } from "react";
 import {CONTRACT_ADDRESS, CONTRACT_ABI} from "../constants";
+import { ethers } from "ethers";
 
 
 export default function Home() {
@@ -21,36 +22,34 @@ export default function Home() {
   
 
   const getProviderorSigner = async (needSigner = false) => {
-    const provider = await web3ModalRef.current.connect();
-    const web3Provider = new providers.Web3Provider(provider);
-    // const address_ = await web3Provider.getAddress();
-    // setAddress(address_);
-    // console.log(address_)
+    const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
+    // const provider = new ethers.providers.JsonRpcProvider(networks[5].provider);
+    await provider.send('eth_requestAccounts', []);
 
-    const {chainId} = await web3Provider.getNetwork();
-    if(chainId !== 5) {
-      window.alert("Change the network to Goerli");
-      throw new Error("Change the network to Goerli");
+    const { chainId } = await provider.getNetwork();
+    if (chainId !== 5) {
+        window.alert("Change the network to Goerli");
+        throw new Error("Change the network to Goerli");
     }
 
-    if(needSigner) {
-      const signer = web3Provider.getSigner();
-      setAddress(await signer.getAddress());
-      return signer;
+    if (needSigner) {
+        const signer = provider.getSigner();
+        setAddress(await signer.getAddress());
+        return signer;
     }
-    return web3Provider;
-  }
+    return provider;
+}
 
-  const connectWallet = async () => {
+const connectWallet = async () => {
     try {
-      await getProviderorSigner(true);
-      setWalletConnected(true);
-      // checkUser();
+        await getProviderorSigner(true);
+        setWalletConnected(true);
+        // checkUser();
     }
     catch (err) {
-      console.error(err);
+        console.error(err);
     }
-  };
+};
 
   const renderButton = () => {
     if(!walletConnected){
@@ -89,10 +88,10 @@ export default function Home() {
         <meta name="desciption" content="PeerPool"/>
         <link rel="icon" href="/open logo.png" />
       </Head>
+      <div className={styles.main}>
       <a href="https://upes-open.org/" target="_blank">
       <img src="/open logo.png" className={styles.openlogo}></img>
       </a>
-      <div className={styles.main}>
         
       <header className={styles.header}>Address: {address}</header>
 
