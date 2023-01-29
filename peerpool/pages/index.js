@@ -91,7 +91,7 @@ const connectWallet = async () => {
       </Head>
       <div className={styles.main}>
       <a href="https://upes-open.org/" target="_blank" rel="noreferrer">
-      <Image src="/open logo.png" className={styles.openlogo}></Image>
+      <Image src="/open logo.png" className={styles.openlogo} alt="open_logo"></Image>
       </a>
         
       <header className={styles.header}>Address: {address}</header>
