@@ -87,6 +87,8 @@ const connectWallet = async () => {
       <Head>
         <title>PeerPool</title>
         <meta name="desciption" content="PeerPool"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
         <link rel="icon" href="/open logo.png" />
       </Head>
       <div className={styles.main}>
