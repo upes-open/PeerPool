@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { CONTRACT_ABI, CONTRACT_ADDRESS } from '../../constants';
 import { newRide, getProviderorSigner, connectWallet } from '../../utils/functions';
 import Web3Modal from "web3modal";
-import { BigNumber, providers, Contract, ethers } from "ethers";
+import { Contract, ethers } from "ethers";
 import styles from "../../styles/Home.module.css";
 
 

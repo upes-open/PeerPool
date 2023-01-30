@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
-import { CONTRACT_ABI, CONTRACT_ADDRESS } from '../../constants';
-import { newRide, getProviderorSigner, connectWallet } from '../../utils/functions';
 import Web3Modal from "web3modal";
-import { BigNumber, providers, Contract, ethers } from "ethers";
+import {  ethers } from "ethers";
 import styles from "../../styles/Home.module.css";
 export default function Book() {
     const [origin, setOrigin] = useState("");
